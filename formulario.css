@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    background-color: #4dc5ac;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Signika', sans-serif;
+}
+
+ul{
+    list-style-type:none;
+}
+
+h1{
+   font-size: 40px;
+   font-weight: bold;
+   margin: 5px 0 5px 0;
+   
+}
+
+h2{
+    margin: 5px 0 5px 0;
+}
+
+.contenedor{
+    width:50%;
+    margin-top: 20px;
+}
+
+.titulo{
+    width:100%;
+    box-sizing: border-box;
+    background-color: #ffeccc;
+    padding: 5px 20px 5px 20px;
+    color:#464b45;
+}
+
+.cuadros{
+    margin-top: 5px;
+    display:flex;
+    justify-content: flex-start;
+}
+
+.dibujo{
+    width: 100px;
+    height: 90px;
+    background-color: #ffeccc;
+    margin-right: 5px;
+}
+
+.datos{
+    width: 100%;
+    height: 90px;
+    background-color: #ffeccc;
+}
+
+.dibujo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dibujo svg{
+    width: 40px;
+    height: auto;
+    color:#464b45;
+}
+
+.datos{
+    box-sizing: border-box;
+    padding: 5px 5px 5px 5px;
+    color:#464b45;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+}
+
+p{
+    margin: 0 0 5px 0;
+} 
+
+span{
+    font-size: 15px;
+}
+#submit{
+    width: 120px;
+    height: 35px;
+    margin-top: 5px;
+    background-color: #faa922;
+    align-self: flex-end;
+    border:none;
+    color: #ffeccc;
+    font-size: 20px;
+    font-family: 'Signika', sans-serif;
+}
+
+@media screen and (max-width: 650px) {
+
+    .contenedor{
+        width: 90%;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+      font-size: 15px;  
+    }
+
+    .dibujo svg{
+        width: 30px;
+    }
+
+
+}

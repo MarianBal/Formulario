@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link rel="shortcut icon" href="./img/m.bmp">
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Signika:700" rel="stylesheet">
+
+  </head>
+  <body>
+      <div class="contenedor">
+        <div class="titulo">
+            <h1>Ada-Fest</h1>
+            <h2>Por favor, confirmar asistencia</h2>
+        </div>
+
+        <form action="guardar_usuario.html" method="get" enctype="application/x-www-form-urlencoded" name="login">
+          <div class="cuadros">
+              <div class="dibujo">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" class="svg-inline--fa fa-user fa-w-14" role="img" 
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 
+                128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0
+                422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"></path></svg>
+              </div>
+              <div class="datos">
+                  <p>Nombre</p>
+                  <input type="text" id="name" name="name" placeholder="Nombre"/>
+              </div>
+          </div>
+
+          <div class="cuadros">
+              <div class="dibujo">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="question" class="svg-inline--fa fa-question fa-w-12" role="img" 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M202.021 0C122.202 0 70.503 32.703 29.914 91.026c-7.363 
+                  10.58-5.093 25.086 5.178 32.874l43.138 32.709c10.373 7.865 25.132 6.026 33.253-4.148 25.049-31.381 43.63-49.449 82.757-49.449 30.764 0 68.816 19.799
+                   68.816 49.631 0 22.552-18.617 34.134-48.993 51.164-35.423 19.86-82.299 44.576-82.299 106.405V320c0 13.255 10.745 24 24 24h72.471c13.255 0 24-10.745 
+                   24-24v-5.773c0-42.86 125.268-44.645 125.268-160.627C377.504 66.256 286.902 0 202.021 0zM192 373.459c-38.196 0-69.271 
+                    31.075-69.271 69.271 0 38.195 31.075 69.27 69.271 69.27s69.271-31.075 69.271-69.271-31.075-69.27-69.271-69.27z"></path></svg>
+              </div>
+              <div class="datos">
+                  <p>Edad</p>
+                  <input type="number" id="age" name="age" placeholder="Edad"/>
+              </div>
+          </div>
+
+          <div class="cuadros">
+              <div class="dibujo">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 
+                    104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
+              </div>
+              <div class="datos">
+                  <p>Estado Civil</p>
+    
+                  <div class="check">
+                    <input type="radio" name="status" value="single" class="radios"><span>Quiero conocer gente</span>
+                    <br/>
+                    <input type="radio" name="status" value="taken" class="radios"><span>No me presenten a nadie</span>
+                  </div>
+            </div>
+          </div>
+
+          <div class="cuadros">
+              <div class="dibujo">
+                  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="flag" class="svg-inline--fa fa-flag fa-w-16" role="img" 
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M349.565 98.783C295.978 98.783 251.721 64 184.348 
+                  64c-24.955 0-47.309 4.384-68.045 12.013a55.947 55.947 0 0 0 3.586-23.562C118.117 24.015 94.806 1.206 66.338.048 34.345-1.254 8 24.296 8 56c0 
+                  19.026 9.497 35.825 24 45.945V488c0 13.255 10.745 24 24 24h16c13.255 0 24-10.745 24-24v-94.4c28.311-12.064 63.582-22.122 114.435-22.122 53.588 0 
+                  97.844 34.783 165.217 34.783 48.169 0 86.667-16.294 122.505-40.858C506.84 359.452 512 
+                    349.571 512 339.045v-243.1c0-23.393-24.269-38.87-45.485-29.016-34.338 15.948-76.454 31.854-116.95 31.854z"></path></svg>
+              </div>
+              <div class="datos">
+                  <p>Nacionalidad</p>
+                  <select  name="nationality" id="nationality">
+                    <option value="ar">Argentina</option>
+                    <option value="per">Peruana</option>
+                    <option value="vnzl">Venezolana</option>
+                  </select>
+                  </div>
+            </div>
+
+            <input type="submit" id="submit" value="Enviar">
+          </form>
+          <div id="invitados">
+                    
+          </div>
+      </div>
+
+          
+        
+            
+          
+      </div>
+     
+        <script src="formulario.js" type="text/javascript"></script>   
+  </body>
