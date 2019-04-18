@@ -61,7 +61,7 @@ h2{
 
 }
 
-.dibujo svg{
+svg{
     width: 40px;
     height: auto;
     color:#464b45;
@@ -95,6 +95,22 @@ span{
     color: #ffeccc;
     font-size: 20px;
     font-family: 'Signika', sans-serif;
+}
+
+.naranja{
+    color: #faa922;
+}
+
+.gris{
+    color: #464b45; 
+}
+
+.rojo{
+    color: red;
+}
+
+.error{
+    border: 2px solid red;
 }
 
 @media screen and (max-width: 650px) {
