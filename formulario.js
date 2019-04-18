@@ -62,12 +62,6 @@ if(soltero.checked || casado.checked){
     estadoCivil = true;
 }
 
-if(soltero.checked){
-    console.log('algo')
-}
-if(casado.checked){
-    console.log('otra cosa')
-}
 
 
 form.onsubmit = function(e){
