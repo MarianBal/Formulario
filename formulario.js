@@ -100,6 +100,8 @@ function agregarInvitado(){
     var lista = document.getElementById('invitados')
     var invitado = document.createElement('div')
 
+    invitado.classList.add('visible')
+
       var estado = ''
 
     if(login.status[0].checked) {
@@ -114,7 +116,7 @@ function agregarInvitado(){
     var i = nacionalidad.selectedIndex;
     var pais = nacionalidad.options[i].value;
 
-    var spanes = ['Nombre', 'Edad', 'Estado Civil', 'Nacionalidad'];
+    var spanes = ['Nombre: ', 'Edad: ', 'Estado Civil: ', 'Nacionalidad: '];
     var datos = [nombre.value, edad.value. estado, pais]
 
     for(var i=0; i<spanes.length; i++){
@@ -124,8 +126,11 @@ function agregarInvitado(){
         var input = document.createElement('input');
         input.value = datos[i];
 
+        var br = document.createElement('br');
+
         invitado.appendChild(span);
         invitado.appendChild(input);
+        invitado.appendChild(br);
     }
 
     var boton = document.createElement('button');

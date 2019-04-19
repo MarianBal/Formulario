@@ -90,7 +90,6 @@ span{
     height: 35px;
     margin-top: 5px;
     background-color: #faa922;
-    align-self: flex-end;
     border:none;
     color: #ffeccc;
     font-size: 20px;
@@ -121,6 +120,28 @@ span{
     border: 2px solid red;
 }
 
+.visible{
+    width: 100%;
+    background-color: #ffeccc;
+    box-sizing: border-box;
+    color: #464b45;
+    padding: 10px 10px 10px 5px;
+    margin-bottom: 5px;
+}
+
+.visible input{
+    border: none;
+    background-color: #ffeccc;
+    color: #464b45;
+    font-size: 15px;
+}
+
+#invitados{
+    padding-top: 5px; 
+}
+
+
+
 @media screen and (max-width: 650px) {
 
     .contenedor{
@@ -138,6 +159,5 @@ span{
     .dibujo svg{
         width: 30px;
     }
-
 
 }
