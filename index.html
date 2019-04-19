@@ -28,7 +28,7 @@
               </div>
               <div class="datos">
                   <p>Nombre</p>
-                  <input type="text" id="name" name="name" placeholder="Nombre"/>
+                  <input onfocus = "persona()" onblur = "noPersona()" type="text" id="name" name="name" placeholder="Nombre"/>
               </div>
           </div>
 
@@ -43,7 +43,7 @@
               </div>
               <div class="datos">
                   <p>Edad</p>
-                  <input type="number" id="age" name="age" placeholder="Edad"/>
+                  <input onfocus = "pregunta()" onblur = "noPregunta()" type="number" id="age" name="age" placeholder="Edad"/>
               </div>
           </div>
 
@@ -57,9 +57,9 @@
                   <p>Estado Civil</p>
     
                   <div class="check">
-                    <input type="radio" id="single" name="status" value="single" class="radios"><span>Quiero conocer gente</span>
+                    <input onfocus = "estado()" onblur = "noEstado()" type="radio" id="single" name="status" value="single" class="radios"><span>Quiero conocer gente</span>
                     <br/>
-                    <input type="radio" id="taken" name="status" value="taken" class="radios"><span>No me presenten a nadie</span>
+                    <input onfocus = "estado()" onblur = "noEstado()" type="radio" id="taken" name="status" value="taken" class="radios"><span>No me presenten a nadie</span>
                   </div>
             </div>
           </div>
@@ -75,7 +75,7 @@
               </div>
               <div class="datos">
                   <p>Nacionalidad</p>
-                  <select  name="nationality" id="nationality">
+                  <select  onfocus = "nacionalidad()" onblur = "noNacionalidad()" name="nationality" id="nationality">
                     <option value="ar">Argentina</option>
                     <option value="per">Peruana</option>
                     <option value="vnzl">Venezolana</option>

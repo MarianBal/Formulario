@@ -134,6 +134,22 @@ span{
     background-color: #ffeccc;
     color: #464b45;
     font-size: 15px;
+    margin-top: 2px;
+}
+
+.visible button{
+    width: 80px;
+    height: 25px;
+    margin-top: 5px;
+    background-color: #faa922;
+    border:none;
+    color: #ffeccc;
+    font-size: 16px;
+    font-family: 'Signika', sans-serif; 
+}
+
+.visible button:active{
+    background-color: #e5920d;
 }
 
 #invitados{

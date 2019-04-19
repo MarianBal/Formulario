@@ -3,57 +3,48 @@ console.log('Hola mundo')
 var form = document.querySelector('form');
 
 var nombre = document.getElementById('name');
-var persona = document.getElementById('persona')
+var pers = document.getElementById('persona')
 
 var edad = document.getElementById('age');
-var pregunta = document.getElementById('pregunta');
+var preg = document.getElementById('pregunta');
 
 var soltero = document.getElementById('single')
 var casado = document.getElementById('taken')
 var corazon = document.getElementById('corazon')
 
-var nacionalidad = document.getElementById('nationality')
+var nac = document.getElementById('nationality')
 var bandera = document.getElementById('nac')
 
 
-nombre.onfocus = function(){
-    persona.classList.add('naranja')
+function persona(){
+    pers.classList.add('naranja')
 }
 
-nombre.onblur = function(){
-    persona.classList.add('gris')
-};
-
-edad.onfocus = function(){
-    pregunta.classList.add('naranja')
+function noPersona(){
+    pers.classList.add('gris')
 }
 
-edad.onblur = function(){
-    pregunta.classList.add('gris')
+function pregunta(){
+    preg.classList.add('naranja')
+}
+
+function noPregunta(){
+    preg.classList.add('gris')
 };
 
-soltero.onfocus = function(){
+function estado(){
     corazon.classList.add('naranja')
 }
 
-soltero.onblur = function(){
+function noEstado(){
     corazon.classList.add('gris')
 };
 
-casado.onfocus = function(){
-    corazon.classList.add('naranja')
-}
-
-casado.onblur = function(){
-    corazon.classList.add('gris')
-};
-
-
-nacionalidad.onfocus = function(){
+function nacionalidad(){
     bandera.classList.add('naranja')
 }
 
-nacionalidad.onblur = function(){
+function noNacionalidad(){
     bandera.classList.add('gris')
 };
 
@@ -113,11 +104,11 @@ function agregarInvitado(){
         estado = 'No me presenten a nadie'
     }
 
-    var i = nacionalidad.selectedIndex;
-    var pais = nacionalidad.options[i].value;
+    var i = nac.selectedIndex;
+    var pais = nac.options[i].value;
 
     var spanes = ['Nombre: ', 'Edad: ', 'Estado Civil: ', 'Nacionalidad: '];
-    var datos = [nombre.value, edad.value. estado, pais]
+    var datos = [nombre.value, edad.value, estado, pais]
 
     for(var i=0; i<spanes.length; i++){
         var span = document.createElement('span');
@@ -142,7 +133,7 @@ function agregarInvitado(){
 
     boton.onclick = function(){
 
-    boton.parentNode.remove();
+        boton.parentNode.remove();
     }
     
 }
