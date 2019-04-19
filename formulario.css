@@ -97,6 +97,14 @@ span{
     font-family: 'Signika', sans-serif;
 }
 
+#submit:hover{
+    cursor: pointer;
+}
+
+#submit:active {
+    background-color: #e5920d;
+  }
+  
 .naranja{
     color: #faa922;
 }
