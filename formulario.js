@@ -21,7 +21,7 @@ function persona(){
 }
 
 function noPersona(){
-    pers.classList.add('gris')
+    pers.classList.remove('naranja')
 }
 
 function pregunta(){
@@ -29,7 +29,7 @@ function pregunta(){
 }
 
 function noPregunta(){
-    preg.classList.add('gris')
+    preg.classList.remove('naranja')
 };
 
 function estado(){
@@ -37,7 +37,7 @@ function estado(){
 }
 
 function noEstado(){
-    corazon.classList.add('gris')
+    corazon.classList.remove('naranja')
 };
 
 function nacionalidad(){
@@ -45,7 +45,7 @@ function nacionalidad(){
 }
 
 function noNacionalidad(){
-    bandera.classList.add('gris')
+    bandera.classList.remove('naranja')
 };
 
 
